@@ -1,7 +1,38 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #001900;
+}
+
+h2 {
+    font-size: 2em;
+    color: #001900;
+}
+
+
+
 nav {
     width: 100%;
     padding-left: 30px;
     padding-right: 10px;
+    align-items: flex-start;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
 }
 
 .logo img {
@@ -10,8 +41,8 @@ nav {
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
+    list-style: none;
     margin-right: 50px;
 }
 
@@ -22,13 +53,13 @@ nav {
 }
 
 .nav-item a {
-    font-family: 'Roboto', sans-serif;
     display: inline-block;
+    font-family: 'Roboto', sans-serif;
     padding: 10px 15px;
     text-decoration: none;
     color: red;
 }
 
 .active {
-    text-decoration: underline;
+    border-bottom: 2px double red;
 }
