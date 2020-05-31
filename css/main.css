@@ -1,3 +1,7 @@
+html {
+  font-size: 100%;
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -12,7 +16,7 @@ h3 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5rem;
   text-align: center;
   color: #001900;
 }
@@ -28,9 +32,7 @@ article {
 h2 {
   font-size: 2em;
   color: #001900;
-  padding-bottom: 0px;
 }
-
 
 footer {
   display: flex;
@@ -41,28 +43,27 @@ footer {
 
 /* NAVBAR */
 
-.logo img {
-  width: 175px;
-  vertical-align: middle;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100%;
 }
 
-nav {
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 10px;
-  align-items: flex-start;
+.logo img {
+  width: 150px;
+  vertical-align: middle;
+  padding: 4px;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   margin-right: 50px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
 }
 
 .nav-item a {
@@ -74,9 +75,11 @@ nav {
 }
 
 .nav-item:hover {
-  background-image: linear-gradient(to bottom,
-      rgba(255, 0, 0, 0),
-      rgba(255, 0, 0, 0.15));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 0.15)
+  );
 }
 
 .active {
@@ -86,7 +89,6 @@ nav {
 /* BLOG CSS */
 
 .blog-img {
-  display: flex;
   width: 20px;
   justify-content: center;
 }
