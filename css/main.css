@@ -9,7 +9,9 @@ body {
   margin: 40px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -74,7 +76,11 @@ footer {
 }
 
 .nav-item:hover {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.15));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 0.15)
+  );
 }
 
 .active {
@@ -129,7 +135,9 @@ hr {
   color: lightcoral;
 }
 
-dl, dd, dt {
+dl,
+dd,
+dt {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -158,10 +166,9 @@ dt {
   width: 100%;
 }
 
-.glossary-letters>li {
+.glossary-letters > li {
   display: flex;
   list-style: none;
-  ;
 }
 
 .navletter {
@@ -172,4 +179,13 @@ dt {
 .glossary-letters li {
   display: inline-block;
   text-decoration: none;
+}
+
+.mymedia {
+  display: flex;
+  justify-content: center;
+}
+
+.mymedia i {
+  margin: 5px;
 }
