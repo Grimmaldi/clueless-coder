@@ -5,10 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to Clueless Coder</title>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet" />
+
 
 </head>
 
@@ -23,6 +25,7 @@
         <li class="nav-item"><a href="blog.html">Blog </a></li>
         <li class="nav-item"><a href="glossary.html">Glossary</a></li>
         <li class="nav-item"><a href="about.html">About</a></li>
+      <li class="nav-item"><a href="signup.html">Sign Up</a></li>
       </ul>
     </nav>
 
@@ -33,22 +36,31 @@
 
     <h1>Welcome to Clueless Coder!!!</h1>
     <div class="splash">
-      <img class="spash" src="images/frustarted_robot_cropped.png" />
+      <img class="splash" src="images/frustarted_robot_cropped.png" />
     </div>
     <p class="splash_p">
-      Clueless Coder is a site made for beginner developers by beginner developers.
+      Clueless Coder is a site made for beginner developers by beginner
+      developers.
     </p>
-    <p class="splash_p">
-      We're all just here to learn and share, one line of spaghetti code at a time.
+    <p class="splash_p encouraging-words invisible">We're all just here to learn and share, one line of spaghetti code
+      at a time.
     </p>
+    <p class="splash_p encouraging-words invisible">We're going to figure it out. Hello, World!
+    </p>
+    <p class="splash_p encouraging-words invisible">We make friends with our bugs, and then politely ask them to leave.
+    </p>
+    <p class="splash_p encouraging-words invisible">Nobody is going to tell us we can't build it... eventually.</p>
   </main>
   <footer>
     <small>&copy; Clueless Coder is copyright</small>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    encouraging = document.getElementsByClassName("encouraging-words")
+    encouraging[Math.floor(Math.random() * encouraging.length)].classList.remove("invisible");
+  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
 </body>
 
 

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Clueless Coder</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/formstyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">
+          <img src="images/clueless.png" alt="Clueless Coder logo" />
+        </a>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Main</a></li>
+          <li class="nav-item"><a href="blog.html">Blog</a></li>
+          <li class="nav-item"><a href="glossary.html">Glossary</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item active"><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Introduce Yourself</h1>
+      <p>
+        Clueless Coder is just starting out, and we have big plans for the site.
+        We want to help coding beginners become coding experts. But, we want to
+        know a bit about our readers, to find out a bit about you and your
+        interests. This will help us figure out what we should write about first
+        and where we should spend most of our energies.
+      </p>
+      <form>
+        <fieldset id="user-info">
+          <legend>About You</legend>
+
+          <label for="firstname">First Name:</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            size="15"
+            required
+          />
+
+          <label for="lastname">Last Name: </label>
+          <input
+            type="text"
+            name="lasttname"
+            id="lastname"
+            size="20"
+            required
+          /><br />
+
+          <label for="email">E-mail: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            size="20"
+            required
+          /><br />
+
+          <label for="gender">Gender: </label><br />
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </fieldset>
+
+        <fieldset id="programming-languages">
+          <legend>Programming Languages</legend>
+
+          <input type="checkbox" id="python" name="languages" value="Python" />
+          <label for="python"> Python</label>
+          <input
+            type="checkbox"
+            id="javascript"
+            name="languages"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label>
+          <input type="checkbox" id="html" name="languages" value="HTML" />
+          <label for="html">HTML</label>
+          <input type="checkbox" id="css" name="languages" value="CSS" />
+          <label for="html">CSS</label>
+        </fieldset>
+        <fieldset id="preferred-ide">
+          <legend>Preferred Editors/IDEs</legend>
+
+          <input type="checkbox" id="vscode" name="editor-ide" value="VSCode" />
+          <label for="vscode"> Visual Studio Code</label>
+          <input type="checkbox" id="atom" name="editor-ide" value="Atom" />
+          <label for="atom">Atom</label>
+          <input
+            type="checkbox"
+            id="sublime"
+            name="editor-ide"
+            value="sublime"
+          />
+          <label for="sublime">Sublime Text</label>
+          <input type="checkbox" id="vim" name="editor-ide" value="Vim" />
+          <label for="vim">Vim</label>
+        </fieldset>
+        <div class="submit">
+          <input type="submit" id="submit-button" value="Submit" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <small>&copy; Clueless Coder is copyright</small>
+    </footer>
+  </body>
+</html>

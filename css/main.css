@@ -74,7 +74,7 @@ footer {
 }
 
 .nav-item:hover {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.15));
+  background-image: linear-gradient( to bottom, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.15));
 }
 
 .active {
@@ -161,7 +161,6 @@ dt {
 .glossary-letters>li {
   display: flex;
   list-style: none;
-  ;
 }
 
 .navletter {
@@ -172,4 +171,18 @@ dt {
 .glossary-letters li {
   display: inline-block;
   text-decoration: none;
+}
+
+.mymedia {
+  display: flex;
+  justify-content: center;
+}
+
+.mymedia i {
+  margin: 5px;
+}
+
+.invisible {
+  /* visibility: hidden; */
+  display: none;
 }
